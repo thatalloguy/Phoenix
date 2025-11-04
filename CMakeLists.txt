@@ -13,12 +13,13 @@ file(GLOB_RECURSE THIRDPARTY_SRC
 
 file(GLOB_RECURSE ENGINE_SRC
         Phoenix/Core/*.h
-        Phoenix/Core*.cpp
+        Phoenix/Core/*.cpp
 )
 
 file(GLOB_RECURSE GAME_SRC
+        Game/Core/*.cpp
+        Game/Core/*.h
         Game/*.cpp
-        Game/*.h
 )
 
 include_directories("Thirdparty/glad/include")
